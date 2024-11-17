@@ -1,0 +1,1 @@
+user="$(echo "$(getent passwd 1001)" | cut -d ':' -f 1)"

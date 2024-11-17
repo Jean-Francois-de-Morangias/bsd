@@ -1,0 +1,3 @@
+interface="$(nmcli -f DEVICE,TYPE con show | grep ethernet | cut -d " " -f 1)"
+uuid="$(nmcli -f TYPE,UUID con show --active | grep ethernet | cut -d ' ' -f2-)"
+trimmed_uuid="$(awk '{$1=$1};1' <<< $uuid)"

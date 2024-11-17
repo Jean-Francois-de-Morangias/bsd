@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+  echo "ERR -----> one file with string to hash"
+  exit 1
+fi
+
+hash() {
+    string_to_hash=$(cat "$1")
+    hashed_string=$(echo -n "$string_to_hash" | b2sum -l 256)
+    echo "OK -----> $hashed_string"
+    exit 0
+}
+
+hash "$1"

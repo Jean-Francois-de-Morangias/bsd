@@ -1,0 +1,3 @@
+interface_wifi="$(nmcli -f DEVICE,TYPE con show | grep wifi | cut -d " " -f 1 | grep *w)"
+uuid_wifi="$(nmcli -f TYPE,UUID con show --active | grep wifi | cut -d ' ' -f2-)"
+trimmed_uuid_wifi="$(awk '{$1=$1};1' <<< $uuid_wifi)"
