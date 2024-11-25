@@ -1,4 +1,4 @@
-export PS1="\[\e[32m\]\$(date +'%H:%M:%S') \[\e[0m\][\u@\h \w] > "
+export PS1="\[\e[32m\]\$(date +'%H:%M:%S') \[\e[0m\][\u@\h] \w > "
 
 alias myip="bash /home/unit0/bsd_i3/scripts/aliases/myip"
 alias weather="bash /home/unit0/bsd_i3/scripts/aliases/weather.sh"
