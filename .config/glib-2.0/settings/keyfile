@@ -7,15 +7,25 @@ window-position=(43, 256)
 window-size=(1203, 902)
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=204
 sort-column='name'
-sort-directories-first=false
+sort-directories-first=true
 sort-order='ascending'
 type-format='category'
 
 [org/gnome/desktop/interface]
 cursor-theme='default'
 cursor-size=24
+
+[org/gnome/nautilus/preferences]
+search-filter-time-type='last_modified'
+default-folder-viewer='list-view'
+
+[org/gnome/nautilus/window-state]
+maximized=true
+
+[org/gnome/nautilus/list-view]
+use-tree-view=true

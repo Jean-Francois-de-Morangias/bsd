@@ -1,4 +1,5 @@
 #!/bin/bash
 
 swww-daemon
-swww img /home/unit0/minimal/000.png
+sleep 1
+swww img /home/unit0/minimal/000.jpg

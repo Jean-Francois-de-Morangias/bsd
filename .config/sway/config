@@ -142,13 +142,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bar {
-        position bottom
-        font "JetBrains Mono 14"
-        status_command i3status
-        tray_output primary
-}
-
 default_border pixel 0
 gaps outer 6
 gaps inner 6
